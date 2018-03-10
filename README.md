@@ -13,21 +13,30 @@ and [Node BACstack](https://github.com/fh1ch/node-bacstack).
 
 ![](images/overview.gif)
 
-## Usage
+## Quickstart
 
-Start Node BACstack Browser by using:
+1. Clone the code!
 
-``` sh
-git clone https://github.com/fh1ch/node-bacstack-browser.git
+    ``` sh
+    git clone https://github.com/fh1ch/node-bacstack-browser.git
+    cd node-bacstack-browser
+    npm install
+    ```
 
-cd node-bacstack-browser
-npm i
+1. Run Node BACstack Browser
 
-npm start
-```
+    ```sh
+    npm start
+    ```
 
-> **Note:** If the application window appears as a blank page, force refresh the
-> page using F5 (Windows) or CMD+R (OSX).
+1. Develop Node BACstack Browser:
+
+    ```sh
+    npm run dev
+    ```
+
+    > **Note:** If the application window appears as a blank page, force refresh the
+    > page using F5 (Windows) or CMD+R (OSX).
 
 ## Contributing
 

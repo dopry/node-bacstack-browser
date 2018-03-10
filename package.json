@@ -6,7 +6,8 @@
   "scripts": {
     "changelog": "commitlint --from=master",
     "ng": "ng",
-    "start": "electron . | ng serve",
+    "start": "ng build --prod && electron .",
+    "dev": "concurrently \"ng serve\" \"electron ./main.dev.js\" \"npm test\"",
     "build": "ng build --prod",
     "test": "ng test --cc",
     "test-travis": "ng test -c travis.karma.conf.js --cc",
@@ -76,6 +77,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "concurrently": "^3.5.1",
     "electron": "^1.7.10",
     "electron-packager": "^10.1.0",
     "jasmine-core": "~2.6.2",
